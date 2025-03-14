@@ -19,8 +19,8 @@ load_dotenv()
 def load_models():
     return {
         'similarity': SentenceTransformer('all-MiniLM-L6-v2'),
-        'openai': OpenAI(api_key=os.getenv('OPENAI_API_KEY')),
-        'anthropic': anthropic.Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
+        'openai': OpenAI(),
+        'anthropic': anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
     }
 
 # LLM Response Generators
@@ -126,7 +126,7 @@ def calculate_scores(bot_response: str, llm_response: str, model) -> dict:
     }
 
 def main():
-    st.title("🤖 LLM as a Judge")
+    st.title("🤖 Multi-LLM Chatbot Evaluator")
     
     # Initialize models and clients
     models = load_models()
