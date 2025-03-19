@@ -1,4 +1,5 @@
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/7949c299-3f50-4c26-9fee-fb59d784bdd5)
+
 
 # 🤖 LLM as a Judge
 
